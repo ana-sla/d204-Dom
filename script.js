@@ -1,5 +1,10 @@
 let menu = document.querySelector(".menu"); 
 let nav= document.querySelector("nav");
+
+let input = document.querySelector("input");
+let botao = document.querySelector("button");
+let h2 = document.querySelector("h2");
+
 // Evento
 
 
@@ -24,3 +29,12 @@ function mostrarMenu(){ //nesse caso nao precisa declarar nemhum parametro no pa
 }
 
 menu.onclick =mostrarMenu; 
+
+function pegarNome(){
+    let nome = input.value;
+    h2.innerHTML = `Seja bem Vind@ ${nome}`;
+    input.value ="";
+
+}
+
+botao.onclick = pegarNome;
