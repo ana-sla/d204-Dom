@@ -16,7 +16,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 30px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 30px;
     margin-right: 10px;
     
@@ -40,8 +40,24 @@ span{
     height: 3px;
     width: 100%;
     display: block;
-}
 
+}
+ .traco-1,  .traco-3{
+    transform-origin: right center;/*mudar o eixo de rotação*/
+    transition: .6s;
+
+
+}
+.ativo .traco-1{
+    transform: rotate(-45deg);
+}
+.ativo .traco-2{
+    opacity: 0;
+    
+}
+.ativo .traco-3{
+    transform: rotate(45deg);
+}
 .visivel{
     transform: translateX(0); /*esta indicando q o elemento deve ir para a posição 0 no eixo x (lateral)*/
 }

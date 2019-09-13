@@ -20,7 +20,7 @@ function mostrarMenu(){ //nesse caso nao precisa declarar nemhum parametro no pa
  //JEITO 2
  
     nav.classList.toggle ("visivel"); //o toggle ja faz a alternancia no hmtl automaticamente
-
+    menu.classList.toggle("ativo");
 }
 
 menu.onclick =mostrarMenu; 
