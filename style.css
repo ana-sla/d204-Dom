@@ -23,9 +23,12 @@ header {
 }
 nav{
     background-color: black;
-   /* display: flex;
-    justify-content: space-around;*/
-    display: none;
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(-100%); /*esta indicando q o elemento deve ir para a posição 0 no eixo y (cima)*/
+    transition: 1s ; 
+    position: relative; /*para funcionar o z-index*/
+    z-index: -1; /*joga o elemento pra tras*/
 }
 
 nav a{
@@ -40,5 +43,5 @@ span{
 }
 
 .visivel{
-    display: block;
+    transform: translateX(0); /*esta indicando q o elemento deve ir para a posição 0 no eixo x (lateral)*/
 }
