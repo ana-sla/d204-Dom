@@ -19,11 +19,13 @@ header {
     justify-content: space-evenly;
     width: 30px;
     margin-right: 10px;
+    
 }
 nav{
     background-color: black;
-    display: flex;
-    justify-content: space-around;
+   /* display: flex;
+    justify-content: space-around;*/
+    display: none;
 }
 
 nav a{
@@ -34,5 +36,9 @@ span{
     background-color: white;
     height: 3px;
     width: 100%;
+    display: block;
+}
+
+.visivel{
     display: block;
 }
