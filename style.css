@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    background-color: rgb(236, 236, 236);
+}
+header {
+    background-color:black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.menu{
+    cursor: pointer; /*cursor da maozinha*/
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    justify-content: space-evenly;
+    width: 30px;
+    margin-right: 10px;
+}
+
+span{
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    display: block;
+}
